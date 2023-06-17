@@ -1,7 +1,7 @@
 import Calc, { stringLength, reverseString, capitalize } from "./task.js";
 
 describe(' my string length', () => {
-  test('should return the correct length', () => {
+  test('should return the exact/correct length', () => {
     
     const str = 'JavaScript';
     const expectedLength = 10;
@@ -11,12 +11,12 @@ describe(' my string length', () => {
   });
 
   test('should throw an error for invalid length', () => {
-    const str = 'This is a long string';
+    const str = 'It is not a long string';
     expect(() => {
 
       stringLength(str);
 
-    }).toThrow('String length must be between 1 and 10 character');
+    }).toThrow('String length must have the length between 1 and 10 character');
   });
 });
 
